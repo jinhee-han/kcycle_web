@@ -141,8 +141,8 @@ function App() {
               ))}
             </tbody>
           </table>
-          <div className="race-table-bottom-summary" style={{display: 'flex', gap: '0.5rem', alignItems: 'stretch', minWidth: '600px'}}>
-            <table className="race-bottom-table" style={{flex: 1.2, minWidth: '240px'}}>
+          <div className="race-table-bottom-summary">
+            <table className="race-bottom-table">
               <tbody>
                 <tr>
                   <td className="bold-cell">금일 예상 매출 <span className="highlight">5,310</span>백만원</td>
@@ -152,7 +152,7 @@ function App() {
                 </tr>
               </tbody>
             </table>
-            <table className="race-bottom-table" style={{flex: 2.5, minWidth: '420px'}}>
+            <table className="race-bottom-table">
               <tbody>
                 <tr>
                   <td className="bold-cell">지표</td>

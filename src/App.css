@@ -4,7 +4,7 @@
   border-radius: 16px;
   padding: 18px 18px 10px 18px;
   margin: 18px auto;
-  max-width: 1600px;
+  max-width: 100%;
   min-height: 95vh;
   box-sizing: border-box;
 }
@@ -23,6 +23,7 @@
   flex-direction: row;
   gap: 18px;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 .chart-area {
   flex: 1.5;
@@ -30,7 +31,7 @@
   border: 2px solid #b0c4de;
   border-radius: 10px;
   padding: 16px 12px 8px 12px;
-  min-width: 420px;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,7 +42,7 @@
   border: 2px solid #b0c4de;
   border-radius: 10px;
   padding: 16px 12px 12px 12px;
-  min-width: 480px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -69,11 +70,12 @@
   display: flex;
   gap: 0.5rem;
   align-items: stretch;
-  min-width: 0;
   width: 100%;
   flex-wrap: wrap;
   margin-top: 8px;
   box-sizing: border-box;
+  overflow-x: auto;
+  flex-direction: row;
 }
 .race-bottom-table {
   width: 100%;
@@ -184,4 +186,29 @@
   font-size: 1.3rem;
   color: #888;
   margin: 0 2px;
+}
+@media (max-width: 900px) {
+  .main-box {
+    padding: 8px 2vw 8px 2vw;
+  }
+  .chart-area, .table-area {
+    min-width: 120px;
+    padding: 8px 2vw 8px 2vw;
+  }
+  .side-menu {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 10px;
+  }
+  .race-table-bottom-summary {
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+  .race-bottom-table {
+    width: 100%;
+  }
 } 
